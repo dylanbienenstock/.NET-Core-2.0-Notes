@@ -2,6 +2,23 @@
 
 Replace all instances of ??? with relevant information.
 
+	dotnet new web
+
+	touch DatabaseOptions.cs
+
+	mkdir Models
+	touch Models/DatabaseContext.cs
+
+	mkdir Views
+	mkdir Views/Main
+	touch Views/Main/Index.cshtml
+
+	mkdir Controllers
+	touch Controllers/MainController.cs
+
+	mkdir wwwroot/css
+	touch wwwroot/css/styles.css
+
 ## Packages
 
 Make sure all versions in your .csproj file == 2.0.0
@@ -96,6 +113,7 @@ Might require "dotnet clean" and a restart of VSCode
 	            .AddEnvironmentVariables();
 	            Configuration = builder.Build();
 
+	            app.UseStaticFiles();
 	            app.UseSession();
 	            app.UseMvc();
 	        }
