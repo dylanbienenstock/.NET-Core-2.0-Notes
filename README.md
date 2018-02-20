@@ -1,6 +1,6 @@
 # Project setup (.NET Core 2.0)
 
-Replace all instances of ??? with your namespace.
+Replace all instances of ??? with relevant information.
 
 ## Packages
 
@@ -104,5 +104,5 @@ Might require "dotnet clean" and a restart of VSCode
 
 ## Migrations
 
-	dotnet ef migrations add xxxxxxx
+	dotnet ef migrations add ???
 	dotnet ef database update
